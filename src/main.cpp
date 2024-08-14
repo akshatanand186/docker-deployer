@@ -65,10 +65,10 @@ int main() {
             std::string path = command.substr(3);
             change_directory(path);
         } else if (command.rfind("tool deploy",0) == 0){
-            std::cout << "Hello" << std::endl;
+            std::cout << detectDockerfile() << std::endl;
         }
         else{
-            std::cout << add(5,6) << std::endl;
+
         }
     }
 
