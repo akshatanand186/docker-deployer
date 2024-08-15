@@ -2,9 +2,6 @@
 #include <iostream>
 namespace fs = std::filesystem;
 
-int add(int a, int b){
-    return a+b;
-}
 bool detectDockerfile(){
     std::cout << "Contents of " << fs::current_path() << ":" << std::endl;
     for (const auto& entry : fs::directory_iterator(fs::current_path())) {
