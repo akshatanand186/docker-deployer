@@ -6,8 +6,6 @@
 #include "kaniko-job.h"
 #include "directory.h"
 
-namespace fs = std::filesystem;
-
 int main() {
     std::string command;
     while (true) {

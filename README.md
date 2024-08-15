@@ -23,3 +23,4 @@ make clean
 - pwd - prints the current path
 - cd /path - navigate to the path you want to
 - tool deploy - Finds the dockerfile in the current pwd and submit the build kaniko job to the kubernetes cluster present. (Under Progress)
+- exit - to exit the shell
