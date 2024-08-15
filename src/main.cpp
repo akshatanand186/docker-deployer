@@ -4,6 +4,7 @@
 #include <cstdlib> 
 #include "deployer.h"
 #include "compile.h"
+#include "kind.h"
 namespace fs = std::filesystem;
 
 
@@ -46,10 +47,11 @@ int main() {
             if(!detectDockerfile()){
                 std::cout << "No Dockerfile detected: Please ensure a Dockerfile is there in current directory" << std::endl;
             }
+            initiateKubernetesCluster();
 
         }
         else{
-
+            std::cout << "Command not found: Try without spaces :(" << std::endl;
         }
     }
 
